@@ -19,6 +19,8 @@
         font-family: "Lacquer", system-ui;
         font-weight: 400;
         font-style: normal;
+        font-size: 96px;
+        color: #8CBBC4;
       }
 
       .mansalva-regular {
@@ -42,7 +44,6 @@
 
       #headgif {
         position: auto;
-        margin-top: -390px;
       }
 
       #headgif img {
@@ -51,7 +52,7 @@
       }
 
       #topnavb {
-        position: sticky;
+        position: fixed;
         top: 0px;
       }
 
@@ -62,54 +63,28 @@
       #footerb {
         margin-top: -400px;
       }
+
+      .content {
+        margin-left: 120px;
+        margin-right: 120px;
+        position: absolute;
+        top: 0px;
+        width: 1200px;
+        /* background-color: white; */
+      }
+
+      #title {
+        margin-top: 300px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <!-- background items -->
-    <!-- top nav bar -->
-    <!-- backdrop -->
-    <div id="topnavb">
-      <svg width="1440" height="404" viewBox="0 0 1440 404" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_diiin_4_38)">
-          <ellipse cx="720" cy="-0.5" rx="720" ry="279.5" fill="#091B40" />
-        </g>
-        <defs>
-          <filter id="filter0_diiin_4_38" x="-115.9" y="-386.9" width="1790.9" height="912" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-            <feOffset dy="9" />
-            <feGaussianBlur stdDeviation="57.95" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0.0352941 0 0 0 0 0.105882 0 0 0 0 0.25098 0 0 0 1 0" />
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_38" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-            <feOffset dx="-206" dy="-10" />
-            <feGaussianBlur stdDeviation="35.6" />
-            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.415686 0 0 0 0 0.529412 0 0 0 1 0" />
-            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_4_38" />
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-            <feOffset dx="235" dy="252" />
-            <feGaussianBlur stdDeviation="123.05" />
-            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.415686 0 0 0 0 0.529412 0 0 0 1 0" />
-            <feBlend mode="normal" in2="effect2_innerShadow_4_38" result="effect3_innerShadow_4_38" />
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-            <feOffset dx="-37" />
-            <feGaussianBlur stdDeviation="19.4" />
-            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0.494118 0 0 0 0 0.694118 0 0 0 0 0.733333 0 0 0 1 0" />
-            <feBlend mode="normal" in2="effect3_innerShadow_4_38" result="effect4_innerShadow_4_38" />
-          </filter>
-        </defs>
-      </svg>
-    </div>
     <!-- background gif -->
     <div id="headgif">
       <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDA2aGQ5OWk3azZ0Mm93NDI2aXY5eTVuc2ZvajU2N2ljb25raHp3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YU1NGo5mVYLFC/giphy.gif" alt="gif of underwater. its blue">
     </div>
-
     <!-- content body -->
     <div id="contentb">
       <svg width="1440" height="2440" viewBox="0 0 1440 2440" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,8 +130,6 @@
         </defs>
       </svg>
     </div>
-
-
     <!-- footer -->
     <div id="footerb">
       <svg width="1440" height="405" viewBox="0 0 1440 405" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +168,52 @@
         </defs>
       </svg>
     </div>
-
-
+    <!-- contents -->
+    <div class="content">
+      <div id="title">
+        <h1 class="lacquer-regular">
+          shayuu
+        </h1>
+      </div>
+    </div>
+    <!-- top nav bar -->
+    <div id="topnavb">
+      <!-- backdrop -->
+      <svg width="1440" height="404" viewBox="0 0 1440 404" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_diiin_4_38)">
+          <ellipse cx="720" cy="-0.5" rx="720" ry="279.5" fill="#091B40" />
+        </g>
+        <defs>
+          <filter id="filter0_diiin_4_38" x="-115.9" y="-386.9" width="1790.9" height="912" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dy="9" />
+            <feGaussianBlur stdDeviation="57.95" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.0352941 0 0 0 0 0.105882 0 0 0 0 0.25098 0 0 0 1 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_38" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dx="-206" dy="-10" />
+            <feGaussianBlur stdDeviation="35.6" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.415686 0 0 0 0 0.529412 0 0 0 1 0" />
+            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_4_38" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dx="235" dy="252" />
+            <feGaussianBlur stdDeviation="123.05" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.415686 0 0 0 0 0.529412 0 0 0 1 0" />
+            <feBlend mode="normal" in2="effect2_innerShadow_4_38" result="effect3_innerShadow_4_38" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dx="-37" />
+            <feGaussianBlur stdDeviation="19.4" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.494118 0 0 0 0 0.694118 0 0 0 0 0.733333 0 0 0 1 0" />
+            <feBlend mode="normal" in2="effect3_innerShadow_4_38" result="effect4_innerShadow_4_38" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
   </body>
 </html>
