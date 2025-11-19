@@ -56,6 +56,12 @@
         font-size: 32px;
       }
 
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       /* content */
       body {
         margin: auto;
@@ -75,6 +81,15 @@
       #topnavb {
         position: fixed;
         top: 0px;
+      }
+
+      #topnav {
+        display: flex;
+        margin-top: -400px;
+      }
+
+      #topnav div {
+        margin-left: 130px;
       }
 
       #contentb {
@@ -269,6 +284,28 @@
         </defs>
       </svg>
       <!-- top nav content -->
+      <div id="topnav">
+        <!-- contact -->
+        <div>
+          <h3 class="mansalva-regular" href="contact.html">contact</h3>
+        </div>
+        <!-- work -->
+        <div>
+          <h3 class="mansalva-regular" href="works.html">work</h3>
+        </div>
+        <!-- home button -->
+        <div>
+          <img id="homeb" src="tophome.png" href="home.html" alt="homepage button" width="160">
+        </div>
+        <!-- play -->
+        <div>
+          <h3 class="mansalva-regular" href="play.html">play</h3>
+        </div>
+        <!-- about -->
+        <div>
+          <h3 class="mansalva-regular" href="about.html">about</h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
