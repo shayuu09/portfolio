@@ -1,0 +1,151 @@
+/* font styles and formatting */
+      .lacquer-regular {
+        font-family: "Lacquer", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: #8CBBC4;
+      }
+
+      h1.lacquer-regular {
+        font-size: 96px;
+      }
+
+      .mansalva-regular {
+        font-family: "Mansalva", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #8CBBC4;
+      }
+
+      h2.mansalva-regular {
+        font-size: 64px;
+      }
+
+      h3.mansalva-regular {
+        font-size: 48px;
+      }
+
+      .gaegu-regular {
+        font-family: "Gaegu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #8CBBC4;
+      }
+
+      h4.gaegu-regular {
+        font-size: 40px;
+      }
+
+      p.gaegu-regular {
+        font-size: 32px;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .altc {
+        color: #013A72;
+      }
+      
+      a {
+        text-decoration: none;
+        color: #013A72;
+      }
+       
+      a:visited {
+        color: #091B40;
+      }
+
+      /* content */
+      body {
+        margin: auto;
+        width: 1440px;
+        background-color: rgb(20, 45, 88);
+      }
+
+      #headgif {
+        position: auto;
+      }
+
+      #headgif img {
+        width: 1440px;
+        height: 1010px;
+      }
+
+      #topnavb {
+        position: fixed;
+        top: 0px;
+      }
+
+      #topnav {
+        display: flex;
+        margin-top: -400px;
+      }
+
+      #topnav div {
+        margin-left: 130px;
+      }
+      
+      #topnav a {
+        color: #8CBBC4; 
+      }
+      
+      #topnav a:visited {
+        color: #8CBBC4;
+      }
+      
+      .topdown {
+        margin-top: 75px;
+      }
+
+      #contentb {
+        margin-top: -350px;
+      }
+
+      #footerb {
+        margin-top: -400px;
+      }
+      
+      #bottomnav {
+        display: flex;
+        margin-top: -250px;
+      }
+      
+      #bottomnav div {
+        margin-left: 230px;
+      }
+      
+      #bottomnav a {
+        color: #091B40;
+      }
+      
+      .content {
+        margin-left: 120px;
+        margin-right: 120px;
+        position: absolute;
+        top: 0px;
+        width: 1200px;
+        /* background-color: white; */
+      }
+
+      #htext {
+        margin-top: -30px;
+      }
+
+      #pheader {
+        margin-top: 300px;
+        text-align: center;
+      }
+
+      #prompt {
+        margin: auto;
+        text-align: center;
+        margin-top: 130px;
+      }
+
+      #arrows {
+        margin-top: -50px;
+      }
