@@ -149,3 +149,10 @@
       #arrows {
         margin-top: -50px;
       }
+      
+#previews {
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  gap: 7%;
+  margin-top: 50px;
+}
